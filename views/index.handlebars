@@ -1,0 +1,14 @@
+{{!-- 2.-Incluir en la vista un parcial que contenga el {menú} del sitio web y sea renderizado antes del Dashboard --}}
+{{> Menu}}
+{{> SeccionPrincipal}}
+<div class="container">
+<div class="row">
+  <div class="col-md-9">
+    <div class="row">
+      {{> Dashboard productos=productos }}
+    </div>
+  </div>
+  {{> Carrito }}
+  {{> Modal}}
+</div>
+</div>
